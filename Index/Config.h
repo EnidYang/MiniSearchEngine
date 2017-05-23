@@ -17,7 +17,7 @@ class IndexConfig
 {
 	public:
 
-		/// 获取单例的指针
+		/// constructor
 		IndexConfig();
 
 		int load_config(const char * configname);
@@ -30,8 +30,8 @@ class IndexConfig
 		char inv_index_file[MAXPATHLEN];
 		char inv_doc_file[MAXPATHLEN];
 
-        /// other possible configuration
-        char dict_file[MAXPATHLEN]; // for text segmentation
+        /// other possible configuration: segmentation, parsing, etc.
+        char dict_file[MAXPATHLEN]; // for text segmentation if it is chinese
 };
 
 #endif
