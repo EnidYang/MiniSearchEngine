@@ -51,7 +51,7 @@ class Index
         int load_term_map(const char* input, std::map<uint32_t, uint32_t>& term_map);
         void segment(const char* text, vector<uint32_t> &terms, uint32_t term_num);
         void *insertitem(uint32_t term, void * itemptr, hashitem_t * table, uint32_t hashsize,
-                uint32_t *hashtop); // insert to hashtable
+                uint32_t *hashtop); // insert term to hashtable
         int buildindex(); // build index
 
     private: 
